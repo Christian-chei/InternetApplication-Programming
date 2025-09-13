@@ -12,17 +12,17 @@
     }
     
     public function greeting(){
-        return "Hello" . $this->first_name."\n";
+        return "Hello" . $this->first_name . "\n";
     }
 
     public function getaddress(){
-     return $this->address . "\n";   
+     return "Your address is " . $this->address . "\n";
     }
 
   }
     $student1 = new Students("John", "Doe", "3225 Woodland Park St");
-    echo $student->greeting();
-    echo $student->getaddress();
+    echo $student1->greeting();
+    echo $student1->getaddress();
 
 
     $student2 = new Students( "Mary", "Jane", "4567 Phenom Park Avenue" );
